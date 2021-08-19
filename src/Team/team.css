@@ -1,0 +1,150 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family:  'Source Code Pro', monospace;;
+    font-size: bold;
+} */ 
+.team_page{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    background:#3498DB   ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1002;
+    width: 100%;
+    font-family:  'Source Code Pro', monospace;
+    font-size: bold;
+}
+.containers
+{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* top: 150px;
+    width: 1500px; */
+    flex-wrap: wrap;
+    padding: 30px;
+    font-family:  'Source Code Pro', monospace;
+    font-size: bold;
+}
+
+.containers .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background:white;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 0 5px 202px rgba(0,0,0,0.5); */
+    transition: 0.5s ease-in-out;
+    border-radius: 20px;
+   font-family:  'Source Code Pro', monospace;
+   font-size: bold;
+
+
+}
+
+.containers .card:hover{
+    height: 400px;
+}
+.containers .card .imgBoxes{
+    position: relative;
+    width: 230px;
+    height: 230px;
+    top: -60px;
+     left: 0px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    border-radius: 50%;
+     /* z-index: 1005; */
+
+}
+ .imgBoxes img{
+   width: 100%;
+    border-radius: 50%;
+
+}
+
+
+
+.containers .card .contents{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility:hidden ;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.containers .card:hover .contents{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.2s;
+}
+.circle1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: lightskyblue ;
+    clip-path: circle(700px at right 800px);
+    
+}
+/* header
+  {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-contents: space-between;
+    align-items: center;
+    flex: 1;
+  }
+  header  .logo{
+    position: relative;
+    max-width: 10px;
+  }
+  header  ul{
+  position: relative;
+  display: flex;
+  }
+  header  ul  li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+    color: white;
+  
+  }
+   header ul a{
+    display: inline-block;
+    color: black;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    border: none;
+    outline:none;
+    border-radius: 2px;
+  }
+  header ul li::after{
+    contents: '';
+	width:0;
+	height: 2px;
+	background: white ;
+	display: block;
+	margin: auto;
+	transition: 0.3s;
+  }
+  header ul li:hover::after{
+    width: 100%;
+  }*/

@@ -1,0 +1,180 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+}
+a{
+ padding: 1rem;
+ text-decoration: none;
+ color:white;
+}
+a:hover
+{
+ color: coral;
+}
+.screen
+{
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows: 5rem 1fr 5rem;
+ grid-area: 'nav'
+            'main'
+            'footer';
+ height: 100%;
+}
+nav{
+ grid-area: 'nav';
+   /* background: linear-gradient(45deg, #5DADE2 , pink, #2E86C1 );
+      background-attachment: fixed; */
+      background-color: #1A1A1A;
+ color:white ;
+ position: -webkit-sticky; /* Safari & IE */
+position: sticky;
+top: 0;
+}
+main .again
+{
+ grid-area: 'main';
+ display: flex;
+  flex-wrap: wrap;
+   flex-flow: column wrap;
+  flex-direction: row;
+  flex-basis: auto;
+  justify-content: center;
+   /* background: linear-gradient(45deg, #5DADE2 , #D6EAF8, #2E86C1 );
+      background-attachment: fixed; */
+}
+footer
+{
+ grid-area: 'footer';
+  background-color: rgb(71, 65, 65);
+  color: white;
+}
+
+.row
+{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.cartItem
+{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  /* border: 1px solid black ; */
+  margin: 0.5rem;
+  flex-direction: row;
+  height: fit-content;
+}
+.cart_data
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-left: 4px solid rgb(245, 136, 236);
+  /* border-radius: 3rem; */
+}
+.cartItem__name
+{
+  padding: 2rem;
+}
+.center
+{
+ justify-content: center;
+}
+.delete-btn
+{
+  margin: 1rem;
+   border-color: #f10404;
+ background-color: #fdfdfd;
+ color:rgb(0, 0, 0);
+ width: 6rem;
+ height: 3rem;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.delete-btn:hover
+{
+background-color: rgb(247, 46, 46);
+color: #ffffff;
+}
+.error
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.about
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/* .content
+{
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-bottom: 10rem;
+} */
+.remove-btn
+{
+  margin: 2rem;
+}
+
+.back{
+   /* background-image: url("./images/food-story.png") */
+    /* background: linear-gradient(45deg, #1A1A1A , #D6EAF8, #1A1A1A ); */
+     background: linear-gradient(40deg,#ffb7f5f8,#AED6F1);
+      background-attachment: fixed;
+
+      /* background-color: #1A1A1A; */
+      /* background: #1A1A1A; */
+}
+
+/*payment*/
+
+  
+.FormGroup {
+	margin: 0 15px 20px;
+	padding: 0;
+	border-style: none;
+	background-color: #7795f8;
+	will-change: opacity, transform;
+	box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #829fff;
+	border-radius: 4px;
+  width: 60vw;
+}
+
+.FormRow {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-left: 15px;
+	border-top: 1px solid #819efc;
+  width: 100%;
+  height: fit-content;
+}
+
+.StripeElement--webkit-autofill {
+	background: transparent !important;
+
+}
+
+.StripeElement {
+	width: 100%;
+  height: fit-content;
+	padding: 11px 15px 11px 0;
+}

@@ -1,0 +1,46 @@
+use userlogin;
+
+drop table reviews;
+create table reviews (
+users varchar(22),
+review varchar(555),
+food varchar(22)
+);
+
+drop table logindata;
+create table logindata (
+userName varchar(255),
+email varchar(255),
+passwords char(60)
+);
+select * from logindata;
+
+
+
+drop table products;
+create table products (
+id varchar(255),
+image varchar(255),
+name char(60),
+price varchar(255),
+category varchar(255)
+);
+select * from products;
+
+create table cart (
+id int auto_increment primary key,
+user varchar(255),
+food varchar(255),
+price varchar(10)
+);
+select * from cart;
+
+select * from reviews;
+SET SQL_SAFE_UPDATES = 0;
+delete from reviews where review='orem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aut soluta omnis maiores ipsa perferendis, fugiat optio temporibus nemo, blanditiis similique et earum dignissimos esse numquam ipsum recusandae dolor sunt.';
+delete from logindata where email="";
+
+select * from logindata;
+select * from reviews;
+select * from products;
+select * from cart;
